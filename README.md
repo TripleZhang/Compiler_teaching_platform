@@ -44,5 +44,5 @@ $ python3 manage.py runserver 0.0.0.0:8000
 
 2. 在浏览器输入你服务器的 ip（这里我们输入本机 IP 地址： **127.0.0.1:8000**） 及端口号，如果正常启动，输出结果如下：
 
-   ![image-20191102013419449](/Users/zhanghongbin/Library/Application Support/typora-user-images/image-20191102013419449.png)
+   ![launch](./img/image-20191102013419449.png)
 
