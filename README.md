@@ -131,14 +131,19 @@ STATICFILES_DIRS = [
 
 ### 运行项目
 
-1. 在项目文件夹下运行指令启动服务器：
+1. 在前端路径下使用webpack打包Vue.js项目，在项目文件夹下运行指令启动服务器：
 
 ```
-$ cd yourdir/Compiler_teaching_platform
-$ python3 manage.py runserver 0.0.0.0:8000
+$ cd yourdir/Compiler_teaching_platform/frontend
+$ npm run build
+$ cd ..
+$ python manage.py runserver 0.0.0.0:8000
 ```
 
 2. 在浏览器输入你服务器的 ip（这里我们输入本机 IP 地址： **127.0.0.1:8000**） 及端口号，如果正常启动，输出结果如下：
 
-   ![launch](./img/vuehello.png)
+   ![launch](./img/homepage.png)
 
+3. 点击Test链接，进入测试页，测试页显示编译执行结果
+
+   ![launch](./img/test.png)
