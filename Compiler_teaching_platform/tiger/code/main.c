@@ -98,8 +98,8 @@ void interp(A_stm s) {
   t = interpStm(s, t);
   // Print the symbol table.
   while (t->tail != NULL) {
-    printf("%s\n", t->id);
-    printf("%d\n", t->value);
+//    printf("%s\n", t->id);
+//    printf("%d\n", t->value);
     t = t->tail;
   }
 }
@@ -206,10 +206,11 @@ int main(void) {
   // Instance of grammar tree
   A_stm s = prog();
   // First scanning: calculate the arguments number.
-  printf("The maximum amount of arguments is %d.\n", maxargs(s));
+//  printf("The maximum amount of arguments is %d.\n", maxargs(s));
   // Second scanning: print the symbol table.
-  printf("Symbol table:\n");
+//  printf("Symbol table:\n");
   interp(s);
+  printf("1");
 
   return 0;
 }
